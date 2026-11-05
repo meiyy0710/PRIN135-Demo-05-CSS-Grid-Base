@@ -1,17 +1,22 @@
 /* grid */
 .grid {
+    display: grid;
 }
 
 .inline-grid {
+    display: inline-grid;
 }
 
 .grid-columns {
+    grid-template-columns: 200px 200px 200px
 }
 
 .grid-rows {
+    grid-template-columns: 50px 50px 50px
 }
 
 .grid-template {
+    grid-template-column: 
 }
 
 .non-fraction {
@@ -21,27 +26,41 @@
 }
 
 .grid-template-repeat {
+    grid-template-columns: repeat(3, auto);
 }
 
 .grid-gap {
+    gap: 10px 20px;
 }
 
 /* grid-template-area */
 #grid-template-area {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar content ads"
+      "footer footer footer"
+    ;
 
     .item {
     }
 
     .header {
+        gird-area: "header";
+        justify-content: start;
+        align-items: start;
     }
 
     .sidebar {
+        grid-area: header;
     }
 
     .content {
+        grid-area: content;
     }
 
     .ads {
+        grid-area: ads;
     }
 
     .footer {
