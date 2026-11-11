@@ -33,27 +33,25 @@
 }
 
 .grid-gap {
-	grid-gap: 15px;
+	gap: 10px 20px;
 }
 
 /* grid-template-area */
 #grid-template-area {
+	display: grid;
 	grid-template-columns: 150px 1fr 120px;
 	grid-template-rows: 50px 1fr 50px;
 	grid-template-areas:
-	"header header header"
-	"sidebar content ads"
-	"footer footer footer";
-
-	.item {
-	}
+		"header header header"
+		"sidebar content ads"
+		"footer footer footer";
 
 	.header {
 		grid-area: header;
 	}
 
 	.sidebar {
-		grid-area: sidebar;
+		grid-area: sidebar; 
 	}
 
 	.content {
